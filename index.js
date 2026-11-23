@@ -97,7 +97,7 @@ productWrap.addEventListener("click",function(event){
 //送出訂單
 function submitOrder(formData){
     axios.post(ordersApiUrl,formData).then(function(response){
-        console.log(response.data);
+        // console.log(response.data);
         orderInfoForm.reset();
         getCarts();
         alert('你已送出訂單');
